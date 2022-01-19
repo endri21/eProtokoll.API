@@ -17,7 +17,12 @@ namespace swagger.Controllers
         [Route(nameof(GetNotifications))]
         public async Task<IActionResult> GetNotifications()
         {
-            return Ok(await _notificationService.GetUnReadNotifications());
+            if (Request != null)
+            {
+                var _auth = Request.Headers["Authorization"];
+                auth_token = _auth.ToString().Substring(7, _auth.ToString().Length - 7);
+            }
+            return Ok(await _notificationService.GetUnReadNotifications(auth_token));
         }
     }
 }
