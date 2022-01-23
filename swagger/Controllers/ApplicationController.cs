@@ -70,5 +70,11 @@ namespace swagger.Controllers
             }
             return Ok(await _applicationService.PassInNextStepAsync(dto, auth_token));
         }
+        [HttpGet]
+        [Route(nameof(GetApplicationHistory))]
+        public async Task<IActionResult> GetApplicationHistory(int appId)
+        {
+            return Ok(await _applicationService.GetApplicationHistoryAsync(appId));
+        }
     }
 }
