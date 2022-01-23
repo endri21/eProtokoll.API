@@ -58,7 +58,6 @@ namespace swagger.Controllers
         {
             return Ok(await _applicationService.RefuseApplicationAsync(dto));
         }
-
         [HttpPost]
         [Route(nameof(NextStep))]
         public async Task<IActionResult> NextStep(UserApplicationsDto dto)
