@@ -1,0 +1,5 @@
+C:\Users\German\source\repos\swagger\eProtokoll.Application\obj\Debug\net5.0\eProtokoll.Application.csprojAssemblyReference.cache
+C:\Users\German\source\repos\swagger\eProtokoll.Application\obj\Debug\net5.0\eProtokoll.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\German\source\repos\swagger\eProtokoll.Application\obj\Debug\net5.0\eProtokoll.Application.AssemblyInfoInputs.cache
+C:\Users\German\source\repos\swagger\eProtokoll.Application\obj\Debug\net5.0\eProtokoll.Application.AssemblyInfo.cs
+C:\Users\German\source\repos\swagger\eProtokoll.Application\obj\Debug\net5.0\eProtokoll.Application.csproj.CoreCompileInputs.cache
