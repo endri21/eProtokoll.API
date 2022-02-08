@@ -24,5 +24,11 @@ namespace swagger.Controllers
             }
             return Ok(await _notificationService.GetUnReadNotifications(auth_token));
         }
+        [HttpPost]
+        [Route(nameof(ReadNotification))]
+        public async Task<IActionResult> ReadNotification(int id)
+        {
+            return Ok(await _notificationService.ReadNotification(id));
+        }
     }
 }
