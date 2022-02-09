@@ -19,6 +19,10 @@ namespace swagger.Controllers
             //var _auth = Request.Headers["Authorization"];
 
             var result = await _applicationService.AddNewApplicationAsync(dto);
+            if (!result.success)
+            {
+                return BadRequest(result);
+            }
             return Ok(result);
         }
 
@@ -93,6 +97,6 @@ namespace swagger.Controllers
         {
             return Ok(await _applicationService.GetApplicationHistoryAsync(appId));
         }
-       
+
     }
 }
